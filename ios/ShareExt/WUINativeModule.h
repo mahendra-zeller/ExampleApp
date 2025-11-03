@@ -1,13 +1,14 @@
-#import <Foundation/Foundation.h>
-#import <Passkit/PassKit.h>
-#import <AppSpec/AppSpec.h>
+//
+//  WUINativeModule.h
+//  WUIExtension
+//
+//  Created by Ajay Grover on 03/04/25.
+//
 
+#import <React/RCTBridgeModule.h>
+#import "ExtensionContextProvider.h"
 
+@interface WUINativeModule : NSObject <RCTBridgeModule>
 
-NS_ASSUME_NONNULL_BEGIN
-
-@interface WUINativeModule : NSObject <NativeShareUIModuleSpec>
 
 @end
-
-NS_ASSUME_NONNULL_END

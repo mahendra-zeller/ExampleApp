@@ -1,10 +1,3 @@
-//
-//  ExtensionContextProvider.h
-//  ZellerApp
-//
-//  Created by Nehal Sanklecha on 19/06/25.
-//
-
 #import <Foundation/Foundation.h>
 
 @protocol ExtensionContextProvider <NSObject>
@@ -14,4 +7,5 @@
 @interface ExtensionContextProviderImpl : NSObject <ExtensionContextProvider>
 + (instancetype)shared;
 - (void)setExtensionContext:(NSExtensionContext *)context;
+- (void)completeRequest;
 @end

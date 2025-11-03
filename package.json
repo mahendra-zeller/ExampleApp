@@ -42,15 +42,7 @@
   "jsSrcsDir": "./app/spec",
   "android": {
     "javaPackageName": "com.myapp.app"
-  },
-  "turbomoduleTemplates": [
-    {
-      "name": "shareExtensionNativeModule",
-      "type": "modules",
-      "jsSrcsDir": "./app/spec"
-    }
-  ]
-},
-  "packageManager": "yarn@4.9.2"
+  }
+}
   
 }

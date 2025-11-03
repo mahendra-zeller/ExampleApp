@@ -12,12 +12,14 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		35F2B3D52EAF391700CD1D7E /* ExtensionContextProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 806005942E1E1EF700ED30E1 /* ExtensionContextProvider.m */; };
+		35F2B3DA2EAF4A6C00CD1D7E /* WUINativeModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F2B3D92EAF4A6C00CD1D7E /* WUINativeModule.m */; };
+		35F2B3DB2EAF4A6C00CD1D7E /* WUINativeModule.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F2B3D92EAF4A6C00CD1D7E /* WUINativeModule.m */; };
 		7699B88040F8A987B510C191 /* libPods-ExampleApp-ExampleAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-ExampleApp-ExampleAppTests.a */; };
 		806005462E1E148B00ED30E1 /* ShareExt.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 8060053B2E1E148B00ED30E1 /* ShareExt.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		8060059D2E1E1EF700ED30E1 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 806005972E1E1EF700ED30E1 /* MainInterface.storyboard */; };
 		8060059F2E1E1EF700ED30E1 /* ExtensionContextProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 806005942E1E1EF700ED30E1 /* ExtensionContextProvider.m */; };
 		806005A02E1E1EF700ED30E1 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806005992E1E1EF700ED30E1 /* ShareViewController.swift */; };
-		806005A12E1E1EF700ED30E1 /* WUINativeModule.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8060059B2E1E1EF700ED30E1 /* WUINativeModule.mm */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		F4C603F5868C163C91BA1A70 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */; };
 		FB64D8288A36E8C4F72F8157 /* libPods-ExampleApp-ShareExt.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 878C5FFD2CFCEB734E1DF133 /* libPods-ExampleApp-ShareExt.a */; };
@@ -66,6 +68,7 @@
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = ExampleApp/main.m; sourceTree = "<group>"; };
 		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = ExampleApp/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-ExampleApp-ExampleAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ExampleApp-ExampleAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		35F2B3D92EAF4A6C00CD1D7E /* WUINativeModule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WUINativeModule.m; sourceTree = "<group>"; };
 		3B4392A12AC88292D35C810B /* Pods-ExampleApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleApp.debug.xcconfig"; path = "Target Support Files/Pods-ExampleApp/Pods-ExampleApp.debug.xcconfig"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-ExampleApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleApp.release.xcconfig"; path = "Target Support Files/Pods-ExampleApp/Pods-ExampleApp.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-ExampleApp-ExampleAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ExampleApp-ExampleAppTests.debug.xcconfig"; path = "Target Support Files/Pods-ExampleApp-ExampleAppTests/Pods-ExampleApp-ExampleAppTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -78,7 +81,6 @@
 		806005962E1E1EF700ED30E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		806005992E1E1EF700ED30E1 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
 		8060059A2E1E1EF700ED30E1 /* WUINativeModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WUINativeModule.h; sourceTree = "<group>"; };
-		8060059B2E1E1EF700ED30E1 /* WUINativeModule.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = WUINativeModule.mm; sourceTree = "<group>"; };
 		806005B52E1E258D00ED30E1 /* ShareExt-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ShareExt-Bridging-Header.h"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ExampleApp/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		878C5FFD2CFCEB734E1DF133 /* libPods-ExampleApp-ShareExt.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ExampleApp-ShareExt.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -167,7 +169,7 @@
 				806005972E1E1EF700ED30E1 /* MainInterface.storyboard */,
 				806005992E1E1EF700ED30E1 /* ShareViewController.swift */,
 				8060059A2E1E1EF700ED30E1 /* WUINativeModule.h */,
-				8060059B2E1E1EF700ED30E1 /* WUINativeModule.mm */,
+				35F2B3D92EAF4A6C00CD1D7E /* WUINativeModule.m */,
 			);
 			path = ShareExt;
 			sourceTree = "<group>";
@@ -540,7 +542,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35F2B3DB2EAF4A6C00CD1D7E /* WUINativeModule.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
+				35F2B3D52EAF391700CD1D7E /* ExtensionContextProvider.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -551,7 +555,7 @@
 			files = (
 				8060059F2E1E1EF700ED30E1 /* ExtensionContextProvider.m in Sources */,
 				806005A02E1E1EF700ED30E1 /* ShareViewController.swift in Sources */,
-				806005A12E1E1EF700ED30E1 /* WUINativeModule.mm in Sources */,
+				35F2B3DA2EAF4A6C00CD1D7E /* WUINativeModule.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

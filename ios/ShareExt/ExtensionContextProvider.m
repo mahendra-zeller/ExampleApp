@@ -1,11 +1,3 @@
-//
-//  ExtensionContextProvider.m
-//  ShareExt
-//
-//  Created by Nehal Sanklecha on 19/06/25.
-//
-
-#import <Foundation/Foundation.h>
 #import "ExtensionContextProvider.h"
 
 @interface ExtensionContextProviderImpl ()
@@ -15,20 +7,30 @@
 @implementation ExtensionContextProviderImpl
 
 + (instancetype)shared {
-    static ExtensionContextProviderImpl *instance = nil;
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        instance = [[ExtensionContextProviderImpl alloc] init];
-    });
-    return instance;
+  static ExtensionContextProviderImpl *instance = nil;
+  static dispatch_once_t onceToken;
+  dispatch_once(&onceToken, ^{
+    instance = [[self alloc] init];
+  });
+  return instance;
 }
 
 - (NSExtensionContext *)getExtensionContext {
-    return self.extensionContext;
+  return _extensionContext;
 }
 
 - (void)setExtensionContext:(NSExtensionContext *)context {
-    self.extensionContext = context;
+  // Defensive assignment — crash guard
+  if (_extensionContext == context) return;
+  _extensionContext = context;
+}
+
+- (void)completeRequest {
+  if (_extensionContext) {
+    [_extensionContext completeRequestReturningItems:nil completionHandler:nil];
+  } else {
+    NSLog(@"⚠️ No extension context available to complete request");
+  }
 }
 
 @end
